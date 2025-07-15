@@ -4,11 +4,13 @@ import java.util.Map;
 public class Main {
 
     // Values that you want to save:
-    static String[] forSaveValues = {"CPF","NOME","DDDCEL1","CEL1","DDDCEL2","CEL2","FLAG_FGTS","VALOR_PRESUMIDO"};
+    static String[] forSaveValues = {"CPF","NOME","DDDCEL1","CEL1","DDDCEL2","CEL2"};
     // Folder Path
-    static String folderPath = "C:\\Users\\YourUser\\Documents\\Coding Projects\\CSV_Modifier\\subjects";
+    static String folderPath = (new File(System.getProperty("user.dir")).getParentFile()).getAbsolutePath() + "\\subjects";
     // A Map to link the data we want to concat
     static Map<Integer, Integer> concat = Map.of(2,3,4,5);
+
+    // -----------------------------------------------------------------------
 
     public static void main(String[] args) throws IOException {
         // Store the files in a variable
